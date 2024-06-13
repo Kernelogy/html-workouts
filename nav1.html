@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        Hello World
+        <p id="demo"></p>
+    
+</body>
+<script>
+    document.getElementById("demo").innerHTML = navigator.appCodeName
+    console.log("appCodeName",navigator.appCodeName)
+    console.log("appName",navigator.appName)
+    console.log("platform", navigator.platform)
+    if(navigator.cookieEnabled){
+        console.log("Yes! Cookie Enabled")
+    }else{
+        console.log("Sorry! Cookie Not Enabled")
+    }
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="user-data"></p>
+</body>
+<script>
+
+    let user = {
+        name : "Mukilan",
+        age : 34,
+        qualification : "Degree",
+        display: () =>{
+            console.log(user.name)
+            console.log(user.age)
+            console.log(user.qualification)
+        }
+    }
+    let car  = '{"name": "Innova", "color": "red", "seats": "7"}'
+
+    user.display()
+
+    console.log(user)
+    console.log(JSON.stringify(user))
+    console.log(JSON.parse(car))
+
+
+    // console.log(user["name"])
+    // console.log(user["age"])
+    // console.log(user["qualification"])
+    document.getElementById("user-data").innerHTML = `
+        Name : ${user.name} <br>
+        Age  : ${user.age} <br>
+        Qualification : ${user.qualification}
+    `
+</script>
+</html>
